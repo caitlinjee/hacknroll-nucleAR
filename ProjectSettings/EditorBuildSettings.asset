@@ -8,9 +8,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LobbyScreen.unity
     guid: 2830590b6df95ed40a2769b8c74dcfc2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMapScreen.unity
     guid: 34616f93878968c4780c8fa51868e5e1
+  - enabled: 0
+    path: Assets/Scenes/InteractiveStyledVectorMap.unity
+    guid: 52800afdfcee54908a3d4a475f2662bd
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/PlaceOnPlane.unity
+    guid: 6fa3bafa624b54dfd99eac24c1b263d8
+  - enabled: 0
+    path: Assets/Scenes/TestArSceen.unity
+    guid: 5dcf80352056d574596256147e323aed
+  - enabled: 1
+    path: Assets/Scenes/VuforiaMapScene.unity
+    guid: 9d844e14e59e1b840aeef600d80fb8a6
   m_configObjects:
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: dd48011ac296879448c15e725156ced9,
       type: 2}

@@ -2,6 +2,9 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/.vs
+/.git
+/.idea
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -9,8 +12,15 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/Assets/Mapbox
+/Assets/Photon
+/Assets/GoogleARCore
 /Mapbox
 /Photon
+/Assets/UnityARKitPlugin
+/t1
+/t2
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data

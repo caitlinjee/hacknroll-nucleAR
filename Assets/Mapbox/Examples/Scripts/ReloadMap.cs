@@ -13,6 +13,7 @@
 		Vector3 _cameraStartPos;
 		AbstractMap _map;
 
+
 		[SerializeField]
 		ForwardGeocodeUserInput _forwardGeocoder;
 
@@ -20,12 +21,31 @@
 		Slider _zoomSlider;
 
 		private HeroBuildingSelectionUserInput[] _heroBuildingSelectionUserInput;
+        private bool isAllowed = false;
+        private TapPlaceOnPlane tapPlaceOnPlane;
 
 		Coroutine _reloadRoutine;
 
 		WaitForSeconds _wait;
 
-		void Awake()
+        public void setTapPlaceOnPlane(TapPlaceOnPlane val)
+        {
+            tapPlaceOnPlane = val;
+        }
+        public void setAllow(bool val)
+        {
+            isAllowed = val;
+        }
+        void Update()
+        {
+            if (isAllowed)
+            {
+                SetUp();
+                isAllowed = false;
+                tapPlaceOnPlane.setAllow(false);
+            }
+        }
+		private void SetUp()
 		{
 			_camera = Camera.main;
 			_cameraStartPos = _camera.transform.position;

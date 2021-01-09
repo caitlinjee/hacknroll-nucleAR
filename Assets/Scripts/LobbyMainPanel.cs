@@ -210,7 +210,7 @@ namespace Com.NucleAr.MapAr
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
-            PhotonNetwork.LoadLevel("MainMapScreen");
+            PhotonNetwork.LoadLevel(1);
         }
         private bool CheckPlayersReady()
         {
